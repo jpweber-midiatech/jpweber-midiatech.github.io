@@ -42,9 +42,9 @@ navLinks.querySelectorAll('a').forEach(link => {
   let width, height, animId;
 
   const waves = [
-    { amplitude: 22, period: 0.012, speed: 0.018, offset: 0,   color: 'rgba(21,101,192,0.5)' },
-    { amplitude: 16, period: 0.018, speed: 0.024, offset: 1.2, color: 'rgba(66,165,245,0.35)' },
-    { amplitude: 12, period: 0.022, speed: 0.030, offset: 2.4, color: 'rgba(212,168,67,0.18)' },
+    { amplitude: 22, period: 0.012, speed: 0.008, offset: 0,   color: 'rgba(21,101,192,0.5)' },
+    { amplitude: 16, period: 0.018, speed: 0.004, offset: 1.2, color: 'rgba(66,165,245,0.35)' },
+    { amplitude: 12, period: 0.022, speed: 0.002, offset: 2.4, color: 'rgba(212,168,67,0.18)' },
   ];
 
   function resize() {

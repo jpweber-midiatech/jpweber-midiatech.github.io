@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JPWEBER Mídia Tech – Navegue Livre</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVEGAÇÃO -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <svg class="logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo JPWEBER">
+          <!-- Veleiro estilizado -->
+          <path d="M24 4 L24 36" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M24 6 L8 34 L24 34 Z" fill="#1565C0" opacity="0.9"/>
+          <path d="M24 12 L40 34 L24 34 Z" fill="#D4A843" opacity="0.85"/>
+          <path d="M8 38 Q24 42 40 38" stroke="#42A5F5" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">JPWEBER <span class="logo-sub">MÍDIA TECH</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#filosofia">Filosofia</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato" class="nav-cta">Fale conosco</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <canvas id="waveCanvas"></canvas>
+      <div class="compass-bg">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="95" stroke="#1565C0" stroke-width="1" opacity="0.15"/>
+          <circle cx="100" cy="100" r="75" stroke="#D4A843" stroke-width="0.5" opacity="0.12"/>
+          <text x="100" y="18" text-anchor="middle" fill="#D4A843" font-size="12" opacity="0.3" font-family="Montserrat">N</text>
+          <text x="100" y="194" text-anchor="middle" fill="#D4A843" font-size="12" opacity="0.3" font-family="Montserrat">S</text>
+          <text x="186" y="105" text-anchor="middle" fill="#D4A843" font-size="12" opacity="0.3" font-family="Montserrat">E</text>
+          <text x="14" y="105" text-anchor="middle" fill="#D4A843" font-size="12" opacity="0.3" font-family="Montserrat">W</text>
+          <line x1="100" y1="25" x2="100" y2="175" stroke="#D4A843" stroke-width="0.5" opacity="0.1"/>
+          <line x1="25" y1="100" x2="175" y2="100" stroke="#D4A843" stroke-width="0.5" opacity="0.1"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-sailboat" id="heroSailboat">
+        <svg viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M60 10 L60 120" stroke="#D4A843" stroke-width="3" stroke-linecap="round"/>
+          <path d="M60 14 L16 105 L60 105 Z" fill="#1565C0" opacity="0.95"/>
+          <path d="M60 28 L100 105 L60 105 Z" fill="#D4A843" opacity="0.9"/>
+          <path d="M60 118 L80 125 L60 128 L40 125 Z" fill="#0D2E5C"/>
+          <path d="M16 110 Q60 124 100 110" stroke="#42A5F5" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <ellipse cx="60" cy="112" rx="28" ry="4" fill="#0D2E5C" opacity="0.5"/>
+        </svg>
+      </div>
+
+      <p class="hero-label">JPWEBER MÍDIA TECH · 2026</p>
+      <h1 class="hero-title">
+        Navegue <span class="gold">livre.</span><br/>
+        A gente cuida<br/>do digital.
+      </h1>
+      <p class="hero-subtitle">
+        Gestão de redes sociais, desenvolvimento web e tráfego digital<br class="desktop-only"/>
+        para que você tenha mais tempo para viver o que importa.
+      </p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn btn-primary">Solicitar Proposta</a>
+        <a href="#servicos" class="btn btn-outline">Ver Serviços</a>
+      </div>
+      <div class="hero-tagline">
+        <span class="tagline-line"></span>
+        <p>"A maré digital a favor do seu negócio."</p>
+        <span class="tagline-line"></span>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Role para explorar</span>
+      <div class="scroll-arrow">
+        <svg width="20" height="28" viewBox="0 0 20 28"><path d="M10 0 L10 20 M3 14 L10 22 L17 14" stroke="#D4A843" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS / STATS -->
+  <section class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num" data-target="10">0</span><span class="stat-unit">+</span>
+        <p>Anos em turismo<br/>& marketing</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="50">0</span><span class="stat-unit">+</span>
+        <p>Projetos<br/>entregues</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="100">0</span><span class="stat-unit">%</span>
+        <p>Foco em<br/>resultados</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="2">0</span><span class="stat-unit"></span>
+        <p>Marcas<br/>próprias ativas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">O QUE FAZEMOS</p>
+        <h2 class="section-title">Serviços que <span class="gold">impulsionam</span> seu negócio</h2>
+        <p class="section-desc">Como o veleiro usa o vento para chegar longe, usamos a tecnologia para levar o seu negócio além.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-delay="0">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#1565C0" stroke-width="1.5"/><path d="M14 24 C14 18 18 14 24 14 C30 14 34 18 34 24" stroke="#D4A843" stroke-width="2" stroke-linecap="round"/><rect x="18" y="22" width="12" height="10" rx="2" stroke="#FFFFFF" stroke-width="1.5"/><circle cx="24" cy="20" r="2" fill="#D4A843"/></svg>
+          </div>
+          <h3>Gestão de Redes Sociais</h3>
+          <p>Criação de conteúdo, estratégia editorial e relacionamento com sua audiência. Especialidade em turismo, hotéis, restaurantes e clubes.</p>
+          <ul class="card-list">
+            <li>Feed + Stories + Reels</li>
+            <li>Calendário editorial</li>
+            <li>Relatórios mensais</li>
+          </ul>
+          <a href="#contato" class="card-link">Solicitar <span>→</span></a>
+        </div>
+
+        <div class="service-card featured" data-delay="100">
+          <div class="card-badge">Destaque</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="26" rx="3" stroke="#D4A843" stroke-width="1.5"/><path d="M6 18 L42 18" stroke="#1565C0" stroke-width="1.5"/><circle cx="12" cy="14" r="2" fill="#D4A843"/><circle cx="18" cy="14" r="2" fill="#42A5F5"/><circle cx="24" cy="14" r="2" fill="#1565C0"/><path d="M14 28 L22 22 L28 28 L34 24" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Desenvolvimento Web</h3>
+          <p>Sites, landing pages e sistemas sob medida em HTML, CSS, JavaScript e Python. Performance, responsividade e identidade visual impecável.</p>
+          <ul class="card-list">
+            <li>Sites institucionais</li>
+            <li>Landing pages</li>
+            <li>Sistemas web full stack</li>
+          </ul>
+          <a href="#contato" class="card-link">Solicitar <span>→</span></a>
+        </div>
+
+        <div class="service-card" data-delay="200">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 36 L20 20 L28 28 L36 16 L42 22" stroke="#D4A843" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="36" r="3" fill="#1565C0"/><circle cx="42" cy="22" r="3" fill="#42A5F5"/><path d="M8 42 L42 42" stroke="#0D2E5C" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Gestão de Tráfego</h3>
+          <p>Campanhas pagas no Meta Ads e Google Ads com foco em conversão. Análise de dados e otimização contínua para o melhor ROI.</p>
+          <ul class="card-list">
+            <li>Meta Ads (FB/IG)</li>
+            <li>Google Ads</li>
+            <li>Análise e otimização</li>
+          </ul>
+          <a href="#contato" class="card-link">Solicitar <span>→</span></a>
+        </div>
+
+        <div class="service-card" data-delay="300">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="8" width="28" height="32" rx="3" stroke="#1565C0" stroke-width="1.5"/><path d="M16 18 L32 18 M16 24 L28 24 M16 30 L24 30" stroke="#D4A843" stroke-width="1.8" stroke-linecap="round"/><circle cx="36" cy="36" r="8" fill="#0A1628" stroke="#D4A843" stroke-width="1.5"/><path d="M33 36 L35 38 L39 34" stroke="#D4A843" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Projetos de Sistemas</h3>
+          <p>Desenvolvimento de plataformas digitais, classificados online e soluções customizadas. Experiência real com o Roteiro Holístico Brasil.</p>
+          <ul class="card-list">
+            <li>Plataformas digitais</li>
+            <li>Integrações e APIs</li>
+            <li>Manutenção técnica</li>
+          </ul>
+          <a href="#contato" class="card-link">Solicitar <span>→</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FILOSOFIA / QUOTING SECTION -->
+  <section class="filosofia" id="filosofia">
+    <div class="filosofia-bg">
+      <div class="wave-line top"></div>
+      <div class="wave-line bottom"></div>
+    </div>
+    <div class="container">
+      <div class="filosofia-inner">
+        <div class="filosofia-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="38" stroke="#D4A843" stroke-width="1" opacity="0.4"/>
+            <path d="M40 8 L40 64" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M40 10 L14 56 L40 56 Z" fill="#1565C0" opacity="0.85"/>
+            <path d="M40 22 L66 56 L40 56 Z" fill="#D4A843" opacity="0.8"/>
+            <path d="M14 62 Q40 72 66 62" stroke="#42A5F5" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="filosofia-text">
+          <p class="section-label light">NOSSA FILOSOFIA</p>
+          <h2>"O vento sempre existiu.<br/><span class="gold">A vela é a tecnologia</span><br/>que te permite usá-lo."</h2>
+          <p class="filosofia-body">
+            A JPWEBER Mídia Tech nasceu da junção de duas paixões: a tecnologia e o mar. Assim como o veleiro não inventa o vento, mas usa cada rajada para chegar mais longe. A JPWEBER não reinventa o digital, domina suas correntes para levar cada cliente ao seu destino.
+          </p>
+          <div class="filosofia-pillars">
+            <div class="pillar">
+              <span class="pillar-icon">🧭</span>
+              <strong>Direção</strong>
+              <p>Cada projeto com foco, rota e destino claros.</p>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">⛵</span>
+              <strong>Liberdade</strong>
+              <p>Tecnologia que trabalha por você enquanto você vive.</p>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">🌊</span>
+              <strong>Movimento</strong>
+              <p>Estratégias digitais que impulsionam negócios adiante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-inner">
+        <div class="sobre-visual">
+          <div class="sobre-card">
+            <div class="sobre-avatar">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="58" fill="#0D2E5C"/>
+                <circle cx="60" cy="50" r="22" fill="#1565C0" opacity="0.6"/>
+                <path d="M20 100 Q60 75 100 100" fill="#1565C0" opacity="0.8"/>
+                <path d="M60 20 L60 80" stroke="#D4A843" stroke-width="2" stroke-linecap="round"/>
+                <path d="M60 22 L38 68 L60 68 Z" fill="#D4A843" opacity="0.7"/>
+                <path d="M60 34 L82 68 L60 68 Z" fill="#FFFFFF" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="sobre-badge-area">
+              <span class="badge">Turismóloga</span>
+              <span class="badge">Full Stack Dev</span>
+              <span class="badge">Velejadora</span>
+            </div>
+          </div>
+          <div class="sobre-float">
+            <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" stroke="#D4A843" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/><path d="M30 10 L30 50" stroke="#D4A843" stroke-width="1.5"/><path d="M10 30 L50 30" stroke="#D4A843" stroke-width="1.5"/><path d="M16 16 L44 44" stroke="#D4A843" stroke-width="0.8" opacity="0.4"/><path d="M44 16 L16 44" stroke="#D4A843" stroke-width="0.8" opacity="0.4"/><circle cx="30" cy="30" r="4" fill="#D4A843"/></svg>
+          </div>
+        </div>
+        <div class="sobre-content">
+          <p class="section-label">SOBRE A CAPITÃ</p>
+          <h2 class="section-title">Julia Weber —<br/><span class="gold">onde tecnologia<br/>encontra o horizonte</span></h2>
+          <p>Turismóloga formada com mais de 10 anos de experiência no setor, especializei-me em marketing digital e gestão de redes sociais para hotéis, restaurantes, clubes de campo e praia.</p>
+          <p>Recentemente me tornei desenvolvedora full stack, programando em Python e JavaScript — e unindo as duas expertises para criar soluções digitais completas e estratégicas.</p>
+          <p>Fundei o <strong>Roteiro Holístico Brasil</strong>, um classificado digital engajado para terapeutas e espaços holísticos, e agora foco na <strong>JPWEBER Mídia Tech</strong> — empresa de projetos digitais inspirada na minha paixão pelo mar e pela vela.</p>
+          <div class="sobre-cta">
+            <a href="https://www.99freelas.com.br/user/jpweber-midia-tech" target="_blank" rel="noopener" class="btn btn-primary">Ver Perfil no 99Freelas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label light">VAMOS NAVEGAR JUNTOS</p>
+        <h2 class="section-title light">Pronto para <span class="gold">soltar as velas?</span></h2>
+        <p class="section-desc light">Conte-me sobre seu projeto. Traçamos a rota digital juntos.</p>
+      </div>
+
+      <div class="contato-grid">
+        <div class="contato-info">
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="#D4A843" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:jpweber.midiatech@gmail.com">jpweber.midiatech@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="#D4A843" stroke-width="1.8"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke="#D4A843" stroke-width="1.8"/></svg>
+            <div>
+              <strong>Localização</strong>
+              <span>Brasil — Atendimento remoto</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#D4A843" stroke-width="1.8"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke="#D4A843" stroke-width="1.8"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <div>
+              <strong>Instagram</strong>
+              <a href="https://www.instagram.com/jpweber.midiatech/" target="_blank" rel="noopener">@jpweber.midiatech</a>
+            </div>
+          </div>
+          <blockquote class="contato-quote">
+            "Solte as velas.<br/>Nós traçamos a rota."
+          </blockquote>
+        </div>
+
+        <div class="contato-form-wrap">
+          <div id="formSuccess" class="form-success" style="display:none;">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="#D4A843" stroke-width="2"/><path d="M14 24 L21 31 L34 18" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Mensagem enviada!</h3>
+            <p>Em breve Entraremos em contato para traçar a sua rota digital.</p>
+          </div>
+
+          <div id="contactForm">
+            <div class="form-group">
+              <label for="nome">Nome *</label>
+              <input type="text" id="nome" placeholder="Seu nome completo" required />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" placeholder="Nome da sua empresa (opcional)" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" placeholder="seuemail@exemplo.com" required />
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp</label>
+              <input type="tel" id="whatsapp" placeholder="(00) 00000-0000" />
+            </div>
+            <div class="form-group">
+              <label>Interesse principal</label>
+              <div class="checkbox-group">
+                <label class="check-label"><input type="checkbox" value="redes" /> Gestão de Redes</label>
+                <label class="check-label"><input type="checkbox" value="web" /> Desenvolvimento Web</label>
+                <label class="check-label"><input type="checkbox" value="trafego" /> Tráfego Pago</label>
+                <label class="check-label"><input type="checkbox" value="sistema" /> Sistemas/Plataformas</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" rows="4" placeholder="Conte um pouco sobre seu projeto ou negócio..." required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary full" id="sendBtn">
+              <span>Enviar mensagem</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 2L15 22 11 13 2 9l20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg class="logo-svg small" viewBox="0 0 48 48" fill="none">
+          <path d="M24 4 L24 36" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M24 6 L8 34 L24 34 Z" fill="#1565C0" opacity="0.9"/>
+          <path d="M24 12 L40 34 L24 34 Z" fill="#D4A843" opacity="0.85"/>
+          <path d="M8 38 Q24 42 40 38" stroke="#42A5F5" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <p class="footer-logo-text">JPWEBER Mídia Tech</p>
+          <p class="footer-tagline">Navegue livre. A gente cuida do digital.</p>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 JPWEBER Mídia Tech · Tecnologia & Estratégia Digital · Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

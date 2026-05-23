@@ -87,7 +87,7 @@
     </div>
 
     <div class="scroll-hint">
-      <span>Role para explorar</span>
+      <span></span>
       <div class="scroll-arrow">
         <svg width="20" height="28" viewBox="0 0 20 28"><path d="M10 0 L10 20 M3 14 L10 22 L17 14" stroke="#D4A843" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
